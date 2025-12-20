@@ -1,10 +1,9 @@
-# Portfolio Template - Professional Web Developer Portfolio
-
-A modern, responsive portfolio template designed for web developers, designers, and creative professionals. Built with clean HTML, Tailwind CSS, and vanilla JavaScript - no framework dependencies required.
+# Portfolio Template - Professional Email Developer Portfolio
 
 ## 🌟 Features
 
 ### Core Features
+
 - **Responsive Design**: Fully responsive layout that works beautifully on all devices
 - **Modern UI/UX**: Clean, professional design with smooth animations and transitions
 - **SEO Optimized**: Complete meta tags, Open Graph, Twitter Cards, and structured data (JSON-LD)
@@ -15,17 +14,20 @@ A modern, responsive portfolio template designed for web developers, designers, 
 ### Page Sections
 
 1. **Hero Section**
+
    - Oversized name with fit-to-width text effect
    - Hero image with overlay text
    - Customizable location and availability text
    - Social handle display
 
 2. **Skills Section**
+
    - Grid of skill icons with hover effects
    - Brand-specific colors on hover
    - 10+ pre-configured technology icons (HTML5, CSS, JavaScript, Mailchimp, SendGrid, HubSpot, etc.)
 
 3. **Projects Section**
+
    - Grid layout with project cards (2:3 aspect ratio images)
    - Category tags (Design System, Marketing, E-commerce, etc.)
    - Project titles and descriptions
@@ -33,11 +35,13 @@ A modern, responsive portfolio template designed for web developers, designers, 
    - Click tracking for analytics
 
 4. **About Section**
+
    - Personal introduction
    - Experience summary
    - Philosophy and approach
 
 5. **Case Studies Section**
+
    - Detailed case study showcases
    - Side-by-side layout with images
    - Key metrics and highlights
@@ -52,12 +56,14 @@ A modern, responsive portfolio template designed for web developers, designers, 
 ### Interactive Features
 
 - **Exit Intent Modal**: Displays when users try to leave the page
+
   - Customizable introduction video (YouTube embed)
   - Uppercase title with centered text
   - Smooth fade-in animation
   - Close button and "Continue Browsing" button
 
-- **Mobile Navigation**: 
+- **Mobile Navigation**:
+
   - Hamburger menu for mobile devices
   - Smooth transitions
   - Accessible navigation controls
@@ -82,12 +88,14 @@ Portfolio1/
 ## 🚀 Quick Start
 
 1. **Download/Clone the template**
+
    ```bash
    git clone <repository-url>
    cd Portfolio1
    ```
 
 2. **Open in browser**
+
    - Simply open `index.html` in your browser
    - No build process required!
 
@@ -101,21 +109,26 @@ Portfolio1/
 ### 1. Personal Information
 
 #### Update Meta Tags (Lines 6-14 in `index.html`)
+
 ```html
 <title>Your Name — Portfolio | Your Title</title>
-<meta name="description" content="Your description...">
-<meta name="keywords" content="your, keywords, here">
+<meta name="description" content="Your description..." />
+<meta name="keywords" content="your, keywords, here" />
 ```
 
 #### Update Structured Data (Lines 54-95)
+
 - Change `name`, `url`, `email`, `jobTitle`
 - Update social media links in `sameAs` array
 - Modify skills in `knowsAbout` array
 - Update location information
 
 #### Update Header Navigation (Lines 161-166)
+
 ```html
-<nav class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-700">
+<nav
+  class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-700"
+>
   <a href="#work">Explore</a>
   <a href="#projects">Portfolio</a>
   <a href="#about">My Story</a>
@@ -124,32 +137,35 @@ Portfolio1/
 ```
 
 #### Update Contact Information
+
 - **Email** (Line 172): Change `hello@jamesjackson.com` to your email
 - **Social Handle** (Line 229): Update `@jamesjackson.studio` to your handle
 
 ### 2. Hero Section
 
 #### Update Name (Line 211)
+
 ```html
-<span><span>Your Name</span></span>
-<span aria-hidden="true">Your Name</span>
+<span><span>Your Name</span></span> <span aria-hidden="true">Your Name</span>
 ```
 
 #### Update Hero Image (Line 218)
+
 - Replace `img/hero.jpg` with your own hero image
 - Recommended: 1200x800px or larger
 - Format: JPG, PNG, or WebP
 
 #### Update Hero Text (Line 223)
+
 ```html
-<p class="...">
-  Your custom hero text here
-</p>
+<p class="...">Your custom hero text here</p>
 ```
+
 - Currently set to: "Based in New York But Available Worldwide"
 - Add `uppercase` class to make text uppercase
 
 #### Update Social Handle (Line 229)
+
 ```html
 <span>@your-handle</span>
 ```
@@ -157,33 +173,44 @@ Portfolio1/
 ### 3. Skills Section
 
 #### Add/Remove Skills (Lines 244-279)
+
 Each skill uses this structure:
+
 ```html
 <a class="skill-icon skill-icon-[name] group ...">
-  <img src="https://cdn.simpleicons.org/[icon-name]/0a0a0a" alt="[Name]">
+  <img src="https://cdn.simpleicons.org/[icon-name]/0a0a0a" alt="[Name]" />
 </a>
 ```
 
 **Available icons** (using Simple Icons CDN):
+
 - Any icon from [Simple Icons](https://simpleicons.org/)
 - Format: `https://cdn.simpleicons.org/[icon-name]/0a0a0a`
 
 **Add custom hover colors** in `css/main.css`:
+
 ```css
 .skill-icon-[name]:hover img {
-  filter: brightness(0) saturate(100%) invert(X%) sepia(X%) saturate(X%) hue-rotate(Xdeg) brightness(X);
+  filter: brightness(0) saturate(100%) invert(X%) sepia(X%) saturate(X%) hue-rotate(
+      Xdeg
+    )
+    brightness(X);
 }
 ```
 
 ### 4. Projects Section
 
 #### Add/Edit Project Cards (Lines 332-492)
+
 Each project card structure:
+
 ```html
-<article class="group rounded-md border border-zinc-200 bg-white overflow-hidden">
+<article
+  class="group rounded-md border border-zinc-200 bg-white overflow-hidden"
+>
   <!-- Image -->
   <a href="#" class="relative overflow-hidden aspect-[2/3] block">
-    <img src="your-image-url" alt="Project name" class="...">
+    <img src="your-image-url" alt="Project name" class="..." />
   </a>
   <div class="p-5">
     <!-- Category Tags -->
@@ -209,6 +236,7 @@ Each project card structure:
 ```
 
 **Project Image Requirements:**
+
 - Aspect ratio: 2:3 (portrait)
 - Recommended size: 800x1200px
 - Formats: JPG, PNG, or WebP
@@ -216,6 +244,7 @@ Each project card structure:
 ### 5. About Section
 
 #### Update About Content (Lines 495-507)
+
 ```html
 <h2 class="...">Your Title</h2>
 <p class="...">Your introduction paragraph...</p>
@@ -225,7 +254,9 @@ Each project card structure:
 ### 6. Case Studies Section
 
 #### Update Case Studies (Lines 510-593)
+
 Each case study includes:
+
 - Category tags
 - Title and description
 - Metrics/highlights
@@ -235,6 +266,7 @@ Each case study includes:
 ### 7. Footer Section
 
 #### Update Footer Content (Lines 598-643)
+
 - Logo/name (Line 586)
 - Description (Line 587)
 - Social links (Lines 589-597)
@@ -244,19 +276,21 @@ Each case study includes:
 ### 8. Exit Intent Modal
 
 #### Update Modal Title (Line 658)
+
 ```html
-<h2 class="...">
-  Your Custom Modal Title
-</h2>
+<h2 class="...">Your Custom Modal Title</h2>
 ```
 
 #### Update Video (Line 663)
+
 Replace the YouTube video ID:
+
 ```html
 <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
 ```
 
 #### Modal Settings (Lines 785-817)
+
 - Edit exit intent detection sensitivity
 - Modify when modal appears
 - Customize close behavior
@@ -266,18 +300,21 @@ Replace the YouTube video ID:
 ### Initial Setup
 
 1. **Get Your PostHog API Key**
+
    - Sign up at [PostHog](https://posthog.com)
    - Create a project
    - Copy your Project API Key
 
 2. **Update API Key** in both files:
+
    - `index.html` (Line 138)
    - `case-study/email-campaign/email.html` (Line 31)
-   
+
    Replace `'YOUR_PROJECT_API_KEY'` with your actual API key:
+
    ```javascript
-   posthog.init('phc_your_actual_api_key_here', {
-     api_host: 'https://us.i.posthog.com',
+   posthog.init("phc_your_actual_api_key_here", {
+     api_host: "https://us.i.posthog.com",
      // ...
    });
    ```
@@ -285,7 +322,7 @@ Replace the YouTube video ID:
 3. **Custom Instance**
    - If using self-hosted PostHog, update `api_host`:
    ```javascript
-   api_host: 'https://your-instance.posthog.com'
+   api_host: "https://your-instance.posthog.com";
    ```
 
 ### Tracked Events
@@ -293,10 +330,12 @@ Replace the YouTube video ID:
 The template automatically tracks:
 
 1. **Page Views** (`$pageview`)
+
    - Home page: `page_type: 'home'`
    - Case study pages: `page_type: 'case_study'`
 
 2. **Project Clicks** (`project_clicked`)
+
    - Properties: `project_name`, `project_type` ('image' or 'title')
 
 3. **Case Study Clicks** (`case_study_clicked`)
@@ -305,10 +344,11 @@ The template automatically tracks:
 ### Custom Events
 
 Add custom tracking:
+
 ```javascript
-posthog.capture('event_name', {
-  property1: 'value1',
-  property2: 'value2'
+posthog.capture("event_name", {
+  property1: "value1",
+  property2: "value2",
 });
 ```
 
@@ -317,6 +357,7 @@ posthog.capture('event_name', {
 ### Create a New Case Study Page
 
 1. **Create directory structure:**
+
    ```
    case-study/
      └── your-project-name/
@@ -326,6 +367,7 @@ posthog.capture('event_name', {
 2. **Copy template from `case-study/email-campaign/email.html`**
 
 3. **Customize the page:**
+
    - Update title and meta tags
    - Replace YouTube video embed
    - Update project explanation paragraphs
@@ -352,17 +394,18 @@ posthog.capture('event_name', {
 The template uses Tailwind's default zinc color palette. To customize:
 
 1. **Use Tailwind CDN custom config** (if needed):
+
    ```html
    <script>
      tailwind.config = {
        theme: {
          extend: {
            colors: {
-             primary: '#your-color',
-           }
-         }
-       }
-     }
+             primary: "#your-color",
+           },
+         },
+       },
+     };
    </script>
    ```
 
@@ -416,6 +459,7 @@ The template uses Tailwind's default zinc color palette. To customize:
 ## 🔍 SEO Features
 
 ### Meta Tags
+
 - Title, description, keywords
 - Open Graph tags (Facebook)
 - Twitter Card tags
@@ -423,11 +467,13 @@ The template uses Tailwind's default zinc color palette. To customize:
 - Canonical URL
 
 ### Structured Data
+
 - Person schema (JSON-LD)
 - WebSite schema
 - Proper semantic HTML
 
 ### Best Practices
+
 - Semantic HTML5 elements
 - Proper heading hierarchy (h1, h2, h3)
 - Alt text for images
@@ -436,16 +482,19 @@ The template uses Tailwind's default zinc color palette. To customize:
 ## 📝 Tips & Best Practices
 
 1. **Images**
+
    - Use WebP format for better compression
    - Optimize images before uploading
    - Use appropriate aspect ratios (2:3 for projects, 4:3 for case studies)
 
 2. **Content**
+
    - Keep project descriptions concise
    - Use clear, action-oriented CTAs
    - Highlight metrics and achievements
 
 3. **Performance**
+
    - Minimize custom JavaScript
    - Use CDN-hosted assets where possible
    - Consider lazy loading for below-fold images
@@ -459,20 +508,24 @@ The template uses Tailwind's default zinc color palette. To customize:
 ## 🐛 Troubleshooting
 
 ### Icons Not Showing
+
 - Check that Lucide Icons CDN is loading
 - Ensure `lucide.createIcons()` is called after DOM loads
 
 ### Analytics Not Working
+
 - Verify PostHog API key is correct
 - Check browser console for errors
 - Ensure no ad blockers are interfering
 
 ### Images Not Displaying
+
 - Check file paths are correct
 - Ensure images are in the `img/` folder
 - Verify image URLs are accessible
 
 ### Modal Not Appearing
+
 - Check that exit intent detection JavaScript is loaded
 - Test by moving mouse to top of page quickly
 - Verify modal HTML structure is intact
@@ -493,6 +546,7 @@ This template is provided as-is for portfolio use. Customize freely for your per
 ## 📞 Support
 
 For customization help or questions:
+
 1. Review the code comments in HTML files
 2. Check Tailwind CSS documentation
 3. Refer to this README
@@ -502,4 +556,3 @@ For customization help or questions:
 **Happy Building! 🚀**
 
 Build something amazing with this template!
-
